@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Ace Parts Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/4ace_logo.png" alt="Auto Shop Logo">
+            </a>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <div class="contact-section">
+                <!-- Contact Form -->
+                <form onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+
+                <!-- Location Map -->
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15441.239425366408!2d121.0015087!3d14.6383443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b74e0806b7f9%3A0x6159e66402348a6a!2s4%20Ace%20Parts%20Solution!5e0!3m2!1sen!2sph!4v1696553056912!5m2!1sen!2sph"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <a href="index.html" class="logo">
+                    <img src="images/4ace_logo.png" alt="Auto Shop Logo">
+                </a>
+                <p>Driven by a passion for automobiles, our startup is committed to delivering top-quality car parts to fulfill your every need. With a focus on reliability and customer satisfaction, we're your trusted partner in keeping your vehicle running
+                    smoothly and safely.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: support@autoshop.com</p>
+                <p>Phone: +63 912 345 6789</p>
+                <p>Location: Manila, Philippines</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Auto Shop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

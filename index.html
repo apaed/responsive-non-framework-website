@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Ace Parts Solution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/4ace_logo.png" alt="Auto Shop Logo">
+            </a>
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="hamburger">
+                <span></span><span></span><span></span>
+            </label>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="home-section">
+            <div class="container home-inner">
+                <div>
+                    <span class="pill">Auto Parts • Quality • Fast</span>
+                    <h1>Explore our online auto shop for essential parts</h1>
+                    <p>Your trusted partner for reliable car parts and accessories.</p>
+                    <div class="home-cta">
+                        <a class="btn" href="products.html">Browse Products</a>
+                        <a class="pill" href="contact.html">Contact Sales →</a>
+                    </div>
+                </div>
+                <div class="showcase card">
+                    <img src="images/truck.jpg" alt="Assorted automotive parts on a workbench">
+                </div>
+            </div>
+        </section>
+        <!-- Featured Products -->
+        <section id="featured">
+            <h2>Featured Products</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will load here dynamically -->
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <a href="index.html" class="logo">
+                    <img src="images/4ace_logo.png" alt="Auto Shop Logo">
+                </a>
+
+                <p>Driven by a passion for automobiles, our startup is committed to delivering top-quality car parts to fulfill your every need. With a focus on reliability and customer satisfaction, we're your trusted partner in keeping your vehicle running
+                    smoothly and safely.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>Email: support@autoshop.com</p>
+                <p>Phone: +63 912 345 6789</p>
+                <p>Location: Manila, Philippines</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Auto Shop. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        // Example product data
+          const products = [
+            { name: "Brake Pads", price: "$49", img: "images/brakepads.png" },
+            { name: "Engine Oil", price: "$29", img: "images/oil.jpg" },
+            { name: "Air Filter", price: "$19", img: "images/airfilter.jpeg" }
+          ];
+        
+          // Load products dynamically
+          const grid = document.getElementById("products-grid");
+          products.forEach((prod, i) => {
+            const card = document.createElement("div");
+            card.className = "product-card";
+            card.innerHTML = `
+              <img src="${prod.img}" alt="${prod.name}">
+              <h3>${prod.name}</h3>
+              <p>${prod.price}</p>
+              <a href="products.html" class="btn">View Details</a>
+            `;
+            grid.appendChild(card);
+        
+            // Staggered fade-in
+            setTimeout(() => card.classList.add("show"), i * 200);
+          });
+    </script>
+
+</body>
+
+</html>

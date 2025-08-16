@@ -1,63 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4Ace Parts Solution</title>
+    <title>Products - 4ACE Parts Solution</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/4ace_logo.png" alt="Auto Shop Logo">
-            </a>
-            <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="hamburger">
-                <span></span><span></span><span></span>
-            </label>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/4ace_logo.png" alt="Auto Shop Logo">
+        </a>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
     <main>
-        <section id="products">
-            <h1>Our Products</h1>
-            <div id="product-list" class="grid"></div>
-        </section>
+      <section id="products">
+        <h1>Our Products</h1>
+        <!-- Filters -->
+        <div class="product-filters">
+          <button class="btn btn-secondary" data-filter="all">All</button>
+          <button class="btn btn-secondary" data-filter="brakes">Brakes</button>
+          <button class="btn btn-secondary" data-filter="engine">Engine</button>
+          <button class="btn btn-secondary" data-filter="suspension">Suspension</button>
+        </div>
+        <!-- Product Grid -->
+        <div id="product-list" class="grid">
+          <!-- Product 1 -->
+          <div class="main-product-card" data-category="brakes">
+            <div class="flip-card-inner">
+              <div class="flip-product-card-front">
+                <img src="images/brakepads.png" alt="Brake Pads">
+                <h3>Brake Pads</h3>
+                <div class="stars">★★★★☆ (12)</div>
+                <p>High-performance brake pads for safety and durability.</p>
+                <p>₱3,300.00</p>
+                <a href="#" class="btn">View Details</a>
+              </div>
+              <div class="flip-card-back">
+                <h3>Specifications</h3>
+                <p>Material: Ceramic</p>
+                <p>Warranty: 1 Year</p>
+                <p>Fits most sedan models.</p>
+                <a href="#" class="btn btn-secondary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="main-product-card" data-category="engine">
+            <div class="flip-card-inner">
+              <div class="flip-product-card-front">
+                <img src="images/spark-plugs.jpg" alt="Spark Plugs">
+                <h3>Spark Plugs</h3>
+                <div class="stars">★★★★★ (25)</div>
+                <p>Premium spark plugs for optimal engine performance.</p>
+                <p>₱450.00</p>
+                <a href="#" class="btn">View Details</a>
+              </div>
+              <div class="flip-card-back">
+                <h3>Specifications</h3>
+                <p>Material: Iridium</p>
+                <p>Warranty: 6 Months</p>
+                <p>Compatible with most engines.</p>
+                <a href="#" class="btn btn-secondary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="main-product-card" data-category="suspension">
+            <div class="flip-card-inner">
+              <div class="flip-product-card-front">
+                <img src="images/shock-absorber.jpg" alt="Shock Absorbers">
+                <h3>Shock Absorbers</h3>
+                <div class="stars">★★★★☆ (8)</div>
+                <p>Reliable shock absorbers for smooth driving experience.</p>
+                <p>₱2,800.00</p>
+                <a href="#" class="btn">View Details</a>
+              </div>
+              <div class="flip-card-back">
+                <h3>Specifications</h3>
+                <p>Type: Gas-charged</p>
+                <p>Warranty: 1 Year</p>
+                <p>Fits SUVs and sedans.</p>
+                <a href="#" class="btn btn-secondary">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more products here -->
+        </div>
+      </section>
+      <section id="recommended">
+        <h2>You may also like</h2>
+        <div class="recommended-carousel">
+          <div class="carousel-track">
+            <!-- Recommended Product 1 -->
+            <div class="rec-card">
+              <img src="images/oil.jpg" alt="Engine Oil">
+              <h4>Engine Oil</h4>
+              <p>₱1,500.00</p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+            <!-- Recommended Product 2 -->
+            <div class="rec-card">
+              <img src="images/airfilter.jpeg" alt="Air Filter">
+              <h4>Air Filter</h4>
+              <p>₱800.00</p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+            <!-- Recommended Product 3 -->
+            <div class="rec-card">
+              <img src="images/battery.jpg" alt="Car Battery">
+              <h4>Car Battery</h4>
+              <p>₱2,500.00</p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="rec-card">
+              <img src="images/belt.jpg" alt="Serpentine Belt">
+              <h4>Serpentine Belt</h4>
+              <p>₱2,500.00</p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+            <div class="rec-card">
+              <img src="images/lugnuts.png" alt="Wheel Lug Nuts">
+              <h4>Wheel Lug Nuts</h4>
+              <p>₱555.00</p>
+              <a href="#" class="btn">View Details</a>
+            </div>
+          </div>
+          <button class="carousel-btn prev">&#10094;</button>
+          <button class="carousel-btn next">&#10095;</button>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="container footer-inner">
-            <div class="footer-col">
-                <a href="index.html" class="logo">
-                    <img src="images/4ace_logo.png" alt="Auto Shop Logo">
-                </a>
-                <p>Driven by a passion for automobiles, our startup is committed to delivering top-quality car parts to fulfill your every need. With a focus on reliability and customer satisfaction, we're your trusted partner in keeping your vehicle running
-                    smoothly and safely.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p>Email: support@autoshop.com</p>
-                <p>Phone: +63 912 345 6789</p>
-                <p>Location: Manila, Philippines</p>
-            </div>
+      <div class="container footer-inner">
+        <div class="footer-col">
+          <a href="index.html" class="logo">
+            <img src="images/4ace_logo.png" alt="Auto Shop Logo">
+          </a>
+          <p>Driven by a passion for automobiles, our startup is committed to delivering top-quality car parts to fulfill your every need. With a focus on reliability and customer satisfaction, we're your trusted partner in keeping your vehicle running smoothly and safely.</p>
         </div>
-        <p class="copyright">&copy; <span id="year"></span> Auto Shop. All rights reserved.</p>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Email: support@autoshop.com</p>
+          <p>Phone: +63 912 345 6789</p>
+          <p>Location: Manila, Philippines</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Auto Shop. All rights reserved. </p>
     </footer>
-    <script src="script.js"></script>
-</body>
-
+    <script>
+      // Dynamic year
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const track = document.querySelector('.carousel-track');
+      const nextBtn = document.querySelector('.carousel-btn.next');
+      const prevBtn = document.querySelector('.carousel-btn.prev');
+      let scrollAmount = 0;
+      const cardWidth = 270; // adjust if card width changes including gap
+      nextBtn.addEventListener('click', () => {
+        track.scrollBy({
+          left: cardWidth,
+          behavior: 'smooth'
+        });
+      });
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({
+          left: -cardWidth,
+          behavior: 'smooth'
+        });
+      });
+      // Simple filter functionality
+      const filterButtons = document.querySelectorAll('.product-filters button');
+      const products = document.querySelectorAll('.main-product-card'); // updated selector
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+          products.forEach(product => {
+            if (filter === 'all' || product.dataset.category === filter) {
+              product.style.display = 'block';
+            } else {
+              product.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

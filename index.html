@@ -1,112 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4Ace Parts Solution</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>4ACE Parts Solution</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  </head>
+  <body>
+    <!-- Header -->
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">
-                <img src="images/4ace_logo.png" alt="Auto Shop Logo">
-            </a>
-            <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="hamburger">
-                <span></span><span></span><span></span>
-            </label>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="products.html">Products</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="images/4ace_logo.png" alt="Auto Shop Logo">
+        </a>
+        <input type="checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </header>
-    <main>
-        <section id="home" class="home-section">
-            <div class="container home-inner">
-                <div>
-                    <span class="pill">Auto Parts • Quality • Fast</span>
-                    <h1>Explore our online auto shop for essential parts</h1>
-                    <p>Your trusted partner for reliable car parts and accessories.</p>
-                    <div class="home-cta">
-                        <a class="btn" href="products.html">Browse Products</a>
-                        <a class="pill" href="contact.html">Contact Sales →</a>
-                    </div>
-                </div>
-                <div class="showcase card">
-                    <img src="images/truck.jpg" alt="Assorted automotive parts on a workbench">
-                </div>
+    <section id="home" class="home-section">
+      <div class="carousel-container">
+        <!-- Slide 1 -->
+        <div class="carousel-slide show-slide" style="background-image: url('images/truck.jpg');">
+          <div class="container home-inner">
+            <div class="hero-content">
+              <span class="pill">Auto Parts • Quality • Fast</span>
+              <h1>Explore our online auto shop for essential parts</h1>
+              <p>Your trusted partner for reliable car parts and accessories.</p>
+              <div class="home-cta">
+                <a class="btn" href="products.html">Browse Products</a>
+                <a class="btn btn-secondary" href="contact.html">Contact Sales →</a>
+              </div>
             </div>
-        </section>
-        <!-- Featured Products -->
-        <section id="featured">
-            <h2>Featured Products</h2>
-            <div class="products-grid" id="products-grid">
-                <!-- Products will load here dynamically -->
-            </div>
-        </section>
-    </main>
-
-
-    <footer>
-        <div class="container footer-inner">
-            <div class="footer-col">
-                <a href="index.html" class="logo">
-                    <img src="images/4ace_logo.png" alt="Auto Shop Logo">
-                </a>
-
-                <p>Driven by a passion for automobiles, our startup is committed to delivering top-quality car parts to fulfill your every need. With a focus on reliability and customer satisfaction, we're your trusted partner in keeping your vehicle running
-                    smoothly and safely.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p>Email: support@autoshop.com</p>
-                <p>Phone: +63 912 345 6789</p>
-                <p>Location: Manila, Philippines</p>
-            </div>
+          </div>
         </div>
-        <p class="copyright">&copy; <span id="year"></span> Auto Shop. All rights reserved.</p>
+        <!-- Slide 2 -->
+        <div class="carousel-slide" style="background-image: url('images/oil.jpg');">
+          <div class="container home-inner">
+            <div class="hero-content">
+              <span class="pill">Performance • Durability • Safety</span>
+              <h1>High-quality engine oils for every car</h1>
+              <p>Keep your engine running smoothly with our top-tier oils.</p>
+              <div class="home-cta">
+                <a class="btn" href="products.html">Browse Products</a>
+                <a class="pill" href="contact.html">Contact Sales →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-slide" style="background-image: url('images/airfilter.jpeg');">
+          <div class="container home-inner">
+            <div class="hero-content">
+              <span class="pill">Clean • Efficient • Reliable</span>
+              <h1>Air filters that breathe life into your engine</h1>
+              <p>Top-quality filters for better performance and fuel efficiency.</p>
+              <div class="home-cta">
+                <a class="btn" href="products.html">Browse Products</a>
+                <a class="pill" href="contact.html">Contact Sales →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Products -->
+    <section id="featured">
+      <h2>Featured Products</h2>
+      <div class="products-grid" id="products-grid"></div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <h2>What Clients Say</h2>
+      <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <img src="images/user.png" alt="Nat Reynolds">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <h4>Nat Reynolds</h4>
+          <span>CEO</span>
+        </div>
+        <div class="testimonial-card">
+          <img src="images/user.png" alt="Celia Almeda">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h4>Celia Almeda</h4>
+          <span>Engineer</span>
+        </div>
+        <div class="testimonial-card">
+          <img src="images/user.png" alt="Bob Roberts">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h4>Bob Roberts</h4>
+          <span>Engineer</span>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <h2>Ready to upgrade your car parts?</h2>
+      <a href="products.html" class="btn">Shop Now</a>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-col">
+          <a href="index.html" class="logo">
+            <img src="images/4ace_logo.png" alt="Auto Shop Logo">
+          </a>
+          <p>Driven by a passion for automobiles, our startup is committed to delivering top-quality car parts to fulfill your every need. With a focus on reliability and customer satisfaction, we're your trusted partner in keeping your vehicle running smoothly and safely.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Email: support@autoshop.com</p>
+          <p>Phone: +63 912 345 6789</p>
+          <p>Location: Manila, Philippines</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Auto Shop. All rights reserved. </p>
     </footer>
-
-
+    <!-- Scripts -->
     <script>
-        // Example product data
-          const products = [
-            { name: "Brake Pads", price: "$49", img: "images/brakepads.png" },
-            { name: "Engine Oil", price: "$29", img: "images/oil.jpg" },
-            { name: "Air Filter", price: "$19", img: "images/airfilter.jpeg" }
-          ];
-        
-          // Load products dynamically
-          const grid = document.getElementById("products-grid");
-          products.forEach((prod, i) => {
-            const card = document.createElement("div");
-            card.className = "product-card";
-            card.innerHTML = `
-              <img src="${prod.img}" alt="${prod.name}">
-              <h3>${prod.name}</h3>
-              <p>${prod.price}</p>
-              <a href="products.html" class="btn">View Details</a>
-            `;
-            grid.appendChild(card);
-        
-            // Staggered fade-in
-            setTimeout(() => card.classList.add("show"), i * 200);
-          });
+      // Featured Products
+      const products = [{
+        name: "Brake Pads",
+        price: "₱3,300.00",
+        img: "images/brakepads.png",
+        description: "High-quality brake pads for safe and smooth stopping."
+      }, {
+        name: "Engine Oil",
+        price: "₱1,500.00",
+        img: "images/oil.jpg",
+        description: "Premium engine oil for maximum performance."
+      }, {
+        name: "Air Filter",
+        price: "₱800.00",
+        img: "images/airfilter.jpeg",
+        description: "Top-quality filters for better performance and fuel efficiency."
+      }, {
+        name: "Wheel Lug Nuts",
+        price: "₱555.00",
+        img: "images/lugnuts.png",
+        description: "Durable lug nuts to keep your wheels secure."
+      }];
+      const grid = document.getElementById("products-grid");
+      products.forEach((prod, i) => {
+        const card = document.createElement("div");
+        card.className = "product-card";
+        card.innerHTML = `
+      
+															<div class="flip-card-inner">
+																<div class="flip-card-front">
+																	<img src="${prod.img}" alt="${prod.name}">
+																		<h3>${prod.name}</h3>
+																		<p>${prod.price}</p>
+																	</div>
+																	<div class="flip-card-back">
+																		<h3>${prod.name}</h3>
+																		<p>${prod.description}</p>
+																		<a href="products.html" class="btn">View Details</a>
+																	</div>
+																</div>
+    `;
+        grid.appendChild(card);
+        setTimeout(() => card.classList.add("show"), i * 200);
+      });
+      // Home Carousel
+      const slides = document.querySelectorAll('.carousel-slide');
+      let currentSlide = 0;
+      const totalSlides = slides.length;
+      const nextBtn = document.getElementById('next');
+      const prevBtn = document.getElementById('prev');
+
+      function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('show-slide'));
+        slides[index].classList.add('show-slide');
+      }
+      // Auto slide every 5s
+      setInterval(() => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+      }, 5000);
     </script>
-
-</body>
-
+  </body>
 </html>
